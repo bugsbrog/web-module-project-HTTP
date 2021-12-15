@@ -50,12 +50,6 @@ CRUD applications are the foundation of most web applications. Being able to man
 * [X] Clone your OWN version of the repository in your terminal
 * [X] cd into the project base directory `cd web-module-project-HTTP`
 * [X] Download server dependencies by running `npm install`
-
-[//]: # (* [ ] Run the local web server by running `node server.js`)
-
-[//]: # (* [ ] Open a new terminal window and cd into the client code `cd client`)
-
-[//]: # (* [ ] Download project dependencies by running `npm install`)
 * [X] Start up the app using `npm start`
 
 ### Task 2: Project Requirements
@@ -79,9 +73,9 @@ CRUD applications are the foundation of most web applications. Being able to man
 #### Deleting a Movie
 > *You added in a CRUD feature! Good job! Now let's get deleted squared away...*
 
-* [ ] Identify the component that holds the "button" needed for deletion. Add an event handler to that button.
+* [X] Identify the component that holds the "button" needed for deletion. Add an event handler to that button.
 
-* [ ] Build an event handler that makes a request to delete the currently viewed movie. Observe what is returned from the request.
+* [X] Build an event handler that makes a request to delete the currently viewed movie. Observe what is returned from the request.
 
 * [ ] You will once again need to keep the server and state data in sync. In `App.js`, complete the `deleteMovie` method so that it receives an id, filters out any movie with that id and sets state to that resultant movie list.
 

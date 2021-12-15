@@ -23,7 +23,8 @@ const App = (props) => {
       });
   }, []);
 
-  const deleteMovie = (id)=> {
+  const deleteMovie = (id) => {
+
   }
 
   const addToFavorites = (movie) => {
