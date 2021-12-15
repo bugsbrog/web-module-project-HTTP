@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from "react";
-
 import { Route, Switch, Redirect } from "react-router-dom";
+import axios from 'axios';
+
+//Components
 import MovieList from './components/MovieList';
 import Movie from './components/Movie';
-
 import MovieHeader from './components/MovieHeader';
-
 import FavoriteMovieList from './components/FavoriteMovieList';
-
-import axios from 'axios';
 import EditMovieForm from "./components/EditMovieForm";
 
 const App = (props) => {
