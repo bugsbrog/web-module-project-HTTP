@@ -21,6 +21,7 @@ const AddMovieForm = (props) => {
             ...addMovie,
             [e.target.name]: e.target.value
         });
+        console.log(addMovie)
     }
 
     const handleSubmit = (e) => {
@@ -33,6 +34,7 @@ const AddMovieForm = (props) => {
             .catch(err => {
                 console.error(err);
             })
+        console.log(addMovie)
     }
 
     const { title, director, genre, metascore, description } = addMovie;
