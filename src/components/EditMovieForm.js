@@ -39,11 +39,11 @@ const EditMovieForm = (props) => {
                 setMovies(res.data);
                 push(`/movies/${movie.id}`);
 			})
-			.catch(err=>{
+			.catch(err => {
 				console.log(err);
 			})
 	}
-	
+
 	const { title, director, genre, metascore, description } = movie;
 
     return (
