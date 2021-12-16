@@ -25,15 +25,15 @@ const EditMovieForm = (props) => {
             })
 	}, [id]);
 	
-	const handleChange = (e) => {
+	const handleChange = evt => {
         setMovie({
             ...movie,
-            [e.target.name]: e.target.value
+            [evt.target.name]: evt.target.value
         });
     }
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    const handleSubmit = evt => {
+        evt.preventDefault();
         axios.put(`http://localhost:9000/api/movies/${id}`, movie)
             .then(res=>{
                 setMovies(res.data);

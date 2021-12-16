@@ -16,16 +16,16 @@ const AddMovieForm = (props) => {
 
     const { id } = useParams();
 
-    const handleChange = (e) => {
+    const handleChange = evt => {
         setAddMovie({
             ...addMovie,
-            [e.target.name]: e.target.value
+            [evt.target.name]: evt.target.value
         });
         console.log(addMovie)
     }
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    const handleSubmit = evt => {
+        evt.preventDefault();
         axios.post(`http://localhost:9000/api/movies/`, addMovie)
             .then(res => {
                 setMovies(res.data);

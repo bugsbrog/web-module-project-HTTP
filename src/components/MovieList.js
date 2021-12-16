@@ -8,7 +8,7 @@ import axios from "axios";
 const MovieList = (props)=> {
     const { movies, setMovies, favoriteMovies } = props;
 
-    useEffect(()=>{
+    useEffect(() => {
         axios.get('http://localhost:9000/api/movies')
             .then(res => {
                 setMovies(res.data);
